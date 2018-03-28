@@ -30,9 +30,9 @@ cout << "max: " << max << " min: " << min << endl;
 
 auto end = chrono::high_resolution_clock::now();
 chrono::duration<double>  el = end - start;
-cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
+cout<<"Execution time is:     " << el.count()  << " mS " << endl;
 
-  return 0;
+  
   //--------------------trial 2
   
 start = chrono::high_resolution_clock::now();
@@ -49,7 +49,7 @@ cout << "max: " << max << " min: " << min << endl;
 
 end = chrono::high_resolution_clock::now();
 el = end - start;
-cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
+cout<<"Execution time is:     " << el.count() << " mS " << endl;
 
 return 0;
 }
