@@ -14,7 +14,7 @@ int max=0;
 for (int i =0; i < 10 ; i++)
 {
   data.push_back(rand() % 5);
-  cout << data.at(i) << "" 
+  cout << data.at(i) << "" ;
 }
   cout << endl;
 
