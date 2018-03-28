@@ -9,7 +9,7 @@ int main(){
 
 
 vector <int> data;
-int length = 1000;
+int length = 1000000;
 // load the data in vector
 int min=0;
 int max=0;
