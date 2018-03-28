@@ -9,13 +9,13 @@ int main(){
 
 
 vector <int> data;
-int length = 10;
+int length = 1000;
 // load the data in vector
 int min=0;
 int max=0;
-for (int i =0; i < 10 ; i++)
+for (int i =0; i < length ; i++)
 {
-  data.push_back((rand() % 10) + 1 );
+  data.push_back((rand() % 100) + 1 );
   cout << data.at(i) << " " ;
 }
   cout << endl;
