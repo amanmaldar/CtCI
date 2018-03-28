@@ -30,7 +30,7 @@ for(int i=0;i<length;i++)
 cout << "max: " << max << " min: " << min << endl; 
 
 auto end = chrono::high_resolution_clock::now();
- sleep(1000);
+ //sleep(1000);
 chrono::duration<double>  el = end - start;
 cout <<"Execution time is:     " << el.count()  << " mS " << endl;
 
@@ -52,6 +52,6 @@ cout << "max: " << max << " min: " << min << endl;
 end = chrono::high_resolution_clock::now();
 el = end - start;
 cout<<"Execution time is:     " << el.count() << " mS " << endl;
-
-return 0;*/
+*/
+return 0;
 }
