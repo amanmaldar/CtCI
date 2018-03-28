@@ -13,8 +13,8 @@ int min=0;
 int max=0;
 for (int i =0; i < 10 ; i++)
 {
-  data.push_back(rand() % 5);
-  cout << data.at(i) << "" ;
+  data.push_back((rand() % 5) + 1 );
+  cout << data.at(i) << " " ;
 }
   cout << endl;
 
@@ -29,7 +29,7 @@ cout << "max: " << max << " min: " << min << endl;
 
 auto end = chrono::high_resolution_clock::now();
 chrono::duration<double> el = end - start;
-cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
+cout<<"Execution time is:     " << el.count() << " mS " << endl;
 
 
 return 0;
