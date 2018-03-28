@@ -19,8 +19,8 @@ for (int i =0; i < 10 ; i++)
   cout << endl;
 
 auto start = chrono::high_resolution_clock::now();
-
-for(int i=0, min = data.at(0), max = data.at(0);i<length;i++)
+min = data.at(0), max = data.at(0);
+for(int i=0;i<length;i++)
 {
   if (data.at(i) < min)   min = data.at(i);
   if (data.at(i) > max)   max = data.at(i);
