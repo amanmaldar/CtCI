@@ -32,8 +32,8 @@ cout << "max: " << max << " min: " << min << endl;
 
 auto end = chrono::high_resolution_clock::now();
 //Sleep(1000);
-chrono::duration<double>  el = end - start;
-cout <<"Execution time is:     " << el.count() << "ello"<<" mS " << endl;
+auto  el = end - start;
+cout <<"Execution time is:     " << el.count() *1000000 << " uS " << endl;
 
   /*
   //--------------------trial 2
