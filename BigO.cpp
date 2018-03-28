@@ -1,3 +1,14 @@
+// Which one is faster?The frst one does one for loop and the other one does two for loops. But then, the frst
+// solution has two lines of code per for loop rather than one.
+
+/*
+max: 100 min: 1
+Execution time is:     27.107 mS
+max: 100 min: 1
+Execution time is:     27.476 mS
+
+*/
+
 #include <iostream>
 #include <chrono>
 #include <vector>
