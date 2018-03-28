@@ -19,7 +19,7 @@ for (int i =0; i < 10 ; i++)
   cout << endl;
 
   // ----------------- trial 1
-auto start = chrono::high_resolution_clock::now();
+start = chrono::high_resolution_clock::now();
 min = data.at(0), max = data.at(0);
 for(int i=0;i<length;i++)
 {
@@ -28,8 +28,8 @@ for(int i=0;i<length;i++)
 }
 cout << "max: " << max << " min: " << min << endl; 
 
-auto end = chrono::high_resolution_clock::now();
-chrono::duration<double> el = end - start;
+end = chrono::high_resolution_clock::now();
+el = end - start;
 cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
 
   
