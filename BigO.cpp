@@ -2,6 +2,7 @@
 #include <chrono>
 #include <vector>
 #include<time.h>
+#include <Windows.h>
 using namespace std;
 
 int main(){
@@ -30,7 +31,7 @@ for(int i=0;i<length;i++)
 cout << "max: " << max << " min: " << min << endl; 
 
 auto end = chrono::high_resolution_clock::now();
- //sleep(1000);
+Sleep(1000);
 chrono::duration<double>  el = end - start;
 cout <<"Execution time is:     " << el.count()  << " mS " << endl;
 
