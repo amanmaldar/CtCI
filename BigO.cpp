@@ -51,7 +51,7 @@ cout << "max: " << max << " min: " << min << endl;
 
 end = chrono::high_resolution_clock::now();
 el = end - start;
-cout<<"Execution time is:     " << el.count() << " mS " << endl;
+cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
 
 return 1;
 }
