@@ -32,7 +32,7 @@ auto end = chrono::high_resolution_clock::now();
 chrono::duration<double>  el = end - start;
 cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
 
-  
+  return 0;
   //--------------------trial 2
   
 start = chrono::high_resolution_clock::now();
