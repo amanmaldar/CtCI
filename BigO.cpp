@@ -30,5 +30,5 @@ chrono::duration<double> el = end - start;
 cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
 
 
-retrun 0;
+return 0;
 }
