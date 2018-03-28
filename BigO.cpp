@@ -16,7 +16,7 @@ int max=0;
 for (int i =0; i < length ; i++)
 {
   data.push_back((rand() % 100) + 1 );
-  cout << data.at(i) << " " ;
+ // cout << data.at(i) << " " ;
 }
   cout << endl;
 
