@@ -36,21 +36,21 @@ auto start = chrono::high_resolution_clock::now();
 for(int i=0;i<length;i++)
 {
     sum += data.at(i);
-	    Sleep(1);
+	    Sleep(1000);
 }
 
 auto end = chrono::high_resolution_clock::now();
- chrono::duration<double> el = end - start;
-    cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
+ chrono::duration<double> el;
+//    cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
 
   
   //--------------------trial 2
   
-start = chrono::high_resolution_clock::now();
+//start = chrono::high_resolution_clock::now();
 
 for(int i =0; i < length; i ++){
 	    prod += data.at(i);
-	    Sleep(1);
+	    Sleep(1000);
 	}
 
 end = chrono::high_resolution_clock::now();
