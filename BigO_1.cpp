@@ -2,10 +2,11 @@
 // solution has two lines of code per for loop rather than one.
 
 /*
-max: 100 min: 1
-Execution time is:     27.107 mS
-max: 100 min: 1
-Execution time is:     27.476 mS
+Ref : CtCI Page 46 - example 1
+Total Execution time would be 10000 ms. But we still call it as O(N). We skip constants. It technically has to be O(2N);
+Execution time is:     5000 mS
+
+Execution time is:     5000 mS
 
 */
 
@@ -27,7 +28,6 @@ int prod=0;
 for (int i =0; i < length ; i++)
 {
   data.push_back((rand() % 100) + 1 );
- // cout << data.at(i) << " " ;
 }
   cout << endl;
 
@@ -40,13 +40,13 @@ for(int i=0;i<length;i++)
 }
 
 auto end = chrono::high_resolution_clock::now();
- chrono::duration<double> el;
-//    cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
+ chrono::duration<double> el = end - start;
+    cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
 
   
   //--------------------trial 2
   
-//start = chrono::high_resolution_clock::now();
+start = chrono::high_resolution_clock::now();
 
 for(int i =0; i < length; i ++){
 	    prod += data.at(i);
