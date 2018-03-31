@@ -8,21 +8,18 @@
 using namespace std;
 
 
-int f(int n) {
-	if (n <= 1) {
-		return 1;
-	   }
-	  Sleep(1000);
-	  return f(n - 1) + f(n - 1);
+void numberFunction(int i) {
+  cout << "The number is: " << i << endl;
+  i++;
+  if(i<10) {
+    numberFunction(i);
+  }
 }
 
+int main() {
 
-int main(){
-	auto start = chrono::high_resolution_clock::now();
+int i = 0;
+numberFunction(i);
 
-	f(2);
-	auto end = chrono::high_resolution_clock::now();
-	chrono::duration<double> el = end - start;
-    
-	return 1;
+return 0;
 }
