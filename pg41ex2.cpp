@@ -2,6 +2,10 @@
 // solution has two lines of code per for loop rather than one.
 
 /*
+Big O just describes the rate of increase.
+For this reason, we drop the constants in runtime. An algorithm that one might have described as 0(2N) is actually O(N).
+
+
 max: 100 min: 1
 Execution time is:     27.107 mS
 max: 100 min: 1
