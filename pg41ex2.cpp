@@ -4,8 +4,10 @@
 /*
 Big O just describes the rate of increase.
 For this reason, we drop the constants in runtime. An algorithm that one might have described as 0(2N) is actually O(N).
+Therefore, since the inner loop does Y work on average and it is run N times, the total work is N^2/2 which
+is O(N^2).
 
-It is very possible frO(N) code to run faster than 0(1) code for specifc inputs. Big O just describes the
+It is very possible for O(N) code to run faster than 0(1) code for specifc inputs. Big O just describes the
 rate of increase.
 For this reason, we drop the constants in runtime. An algorithm that one might have described as 0(2N)
 is actuallyO(N).
