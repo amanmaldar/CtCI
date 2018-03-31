@@ -1,5 +1,6 @@
 // Which one is faster?The frst one does one for loop and the other one does two for loops. But then, the frst
 // solution has two lines of code per for loop rather than one.
+// Calculate total time. 2N is represented as N only
 
 /*
 Ref : CtCI Page 46 - example 1
