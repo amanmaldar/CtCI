@@ -30,7 +30,7 @@ int main() {
 
 int i = 0;
 //numberFunction(i);
-cout <<  "ans: " << fib(5) << endl; 
+cout <<  "ans: " << fib(10) << endl; 
 
 return 0;
 }
