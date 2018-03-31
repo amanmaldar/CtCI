@@ -4,8 +4,10 @@
 /*
 Ref : CtCI Page 46 - example 1
 Total Execution time would be 10000 ms. But we still call it as O(N). We skip constants. It technically has to be O(2N);
-Execution time is:     5000 mS
-Execution time is:     5000 mS
+Loop 1 Execution time is:     5049.31 mS
+Loop 2 Execution time is:     5034.76 mS
+Total Execution time is:     10084.1 mS
+
 
 O(1) means in constant time - independent of the number of items.
 O(N) means in proportion to the number of items.
