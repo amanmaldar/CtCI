@@ -5,10 +5,15 @@
 Ref : CtCI Page 46 - example 1
 Total Execution time would be 10000 ms. But we still call it as O(N). We skip constants. It technically has to be O(2N);
 Execution time is:     5000 mS
-
 Execution time is:     5000 mS
 
+O(1) means in constant time - independent of the number of items.
+O(N) means in proportion to the number of items.
+O(log N) means a time proportional to log(N)
+
 */
+
+
 
 #include <iostream>
 #include <chrono>
@@ -41,12 +46,12 @@ for(int i=0;i<length;i++)
 
 auto end = chrono::high_resolution_clock::now();
  chrono::duration<double> el = end - start;
-    cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
+    cout<<"Loop 1 Execution time is:     " << el.count() * 1000 << " mS " << endl;
 
   
   //--------------------trial 2
   
-start = chrono::high_resolution_clock::now();
+auto start1 = chrono::high_resolution_clock::now();
 
 for(int i =0; i < length; i ++){
 	    prod += data.at(i);
@@ -54,8 +59,11 @@ for(int i =0; i < length; i ++){
 	}
 
 end = chrono::high_resolution_clock::now();
+el = end - start1;
+cout<<"Loop 2 Execution time is:     " << el.count() * 1000 << " mS " << endl;
+
 el = end - start;
-cout<<"Execution time is:     " << el.count() * 1000 << " mS " << endl;
+cout<<"Total Execution time is:     " << el.count() * 1000 << " mS " << endl;
 
 return 1;
 }
