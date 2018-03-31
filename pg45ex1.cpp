@@ -14,8 +14,8 @@ int f(int n) {
 	   }
 	  Sleep(1000);
 	  return f(n - 1) + f(n - 1);
-	}
 }
+
 
 int main(){
 	auto start = chrono::high_resolution_clock::now();
