@@ -1,6 +1,16 @@
  // This is recursion example fibonacci 1 1 2 3 5 8 13
 // ref - https://www.youtube.com/watch?v=zg-ddPbzcKM
 
+/*
+TimeComplexity is cummulative sum of time required to execute each function.
+We should know total functions in the program. In the example from CTCI is is 2^N.
+
+Try to remember this pattern. When you have a recursive function that makes multiple calls, the runtime will
+often (but not always) look like O(branches^depth), where branches is the number of times each recursive
+call branches. In this case, this gives us O(2^N).
+
+*/
+
 #include <iostream>
 #include <chrono>
 
