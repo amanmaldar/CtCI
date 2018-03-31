@@ -20,10 +20,10 @@ int main(){
 
 
 vector <int> data;
-int length = 1000000;
+int length = 5;
 // load the data in vector
-int min=0;
-int max=0;
+int sum=0;
+int prod=0;
 for (int i =0; i < length ; i++)
 {
   data.push_back((rand() % 100) + 1 );
@@ -33,13 +33,11 @@ for (int i =0; i < length ; i++)
 
   // ----------------- trial 1
 auto start = chrono::high_resolution_clock::now();
-min = data.at(0), max = data.at(0);
 for(int i=0;i<length;i++)
 {
-  if (data.at(i) < min)   min = data.at(i);
-  if (data.at(i) > max)   max = data.at(i);
+    sum += data.at(i);
+	    Sleep(1);
 }
-cout << "max: " << max << " min: " << min << endl; 
 
 auto end = chrono::high_resolution_clock::now();
  chrono::duration<double> el = end - start;
@@ -49,16 +47,11 @@ auto end = chrono::high_resolution_clock::now();
   //--------------------trial 2
   
 start = chrono::high_resolution_clock::now();
-min = data.at(0), max = data.at(0);
-for(int i=0;i<length;i++)
-{
-  if (data.at(i) < min)   min = data.at(i);
-}
-  for(int i=0;i<length;i++)
-{
-  if (data.at(i) > max)   max = data.at(i);
-}
-cout << "max: " << max << " min: " << min << endl; 
+
+for(int i =0; i < length; i ++){
+	    prod += data.at(i);
+	    Sleep(1);
+	}
 
 end = chrono::high_resolution_clock::now();
 el = end - start;
